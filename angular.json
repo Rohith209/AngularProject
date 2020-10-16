@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngShopCart"
+    }
+  },
+  "defaultProject": "AngShopCart",
+  "cli": {
+    "analytics": "0aac5de5-70df-43a6-80e1-3eda3da56fac"
+  }
 }
