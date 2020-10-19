@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,9 @@ import { CartComponent } from './components/shopping-cart/cart/cart.component';
 import { CartListComponent } from './components/shopping-cart/cart/cart-list/cart-list.component';
 import { ProductsItemComponent } from './components/shopping-cart/products-list/products-item/products-item.component';
 import { ProductComponent } from './models/product/product.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,14 +30,12 @@ import { ProductComponent } from './models/product/product.component';
     CartComponent,
     CartListComponent,
     ProductsItemComponent,
-    ProductComponent
+    ProductComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
